@@ -1,0 +1,253 @@
+id,name,colour
+-1,Northern Cyprus,#AA5485
+-2,Kosovo,#E5515A
+-3,Somaliland,#DA3E1B
+4,Afghanistan,#E57E66
+8,Albania,#EA3E4D
+10,Antarctica,#42FBE7
+12,Algeria,#ECBCD2
+16,American Samoa,#EEFB5F
+20,Andorra,#D53AA4
+24,Angola,#B5947E
+28,Antigua and Barbuda,#9AA9C3
+31,Azerbaijan,#A26BA6
+32,Argentina,#F32409
+36,Australia,#C04C2E
+40,Austria,#72EB1C
+44,Bahamas,#DEB8BA
+48,Bahrain,#9D75CF
+50,Bangladesh,#AD595E
+51,Armenia,#3002F9
+52,Barbados,#567987
+56,Belgium,#106F44
+60,Bermuda,#40F6F9
+64,Bhutan,#925BFE
+68,"Bolivia, Plurinational State of",#E4556F
+70,Bosnia and Herzegovina,#8CC455
+72,Botswana,#40CCE0
+74,Bouvet Island,#59526E
+76,Brazil,#37D7FA
+84,Belize,#6D0A0B
+86,British Indian Ocean Territory,#26A7DA
+90,Solomon Islands,#8F5E64
+92,"Virgin Islands, British",#C4E2BC
+96,Brunei Darussalam,#8A67E5
+100,Bulgaria,#F810FE
+104,Myanmar,#96A393
+108,Burundi,#8A61CE
+112,Belarus,#927F09
+116,Cambodia,#674265
+120,Cameroon,#5657B7
+124,Canada,#DAEA01
+132,Cape Verde,#BA5853
+136,Cayman Islands,#CD7721
+140,Central African Republic,#854FBF
+144,Sri Lanka,#B3412A
+148,Chad,#928FAE
+152,Chile,#5ECADE
+156,China,#4F6A3A
+158,"Taiwan, Province of China",#502618
+162,Christmas Island,#642780
+166,Cocos (Keeling) Islands,#C75E74
+170,Colombia,#036CA9
+174,Comoros,#FFA17E
+175,Mayotte,#36F16A
+178,Congo,#0829BD
+180,"Congo, the Democratic Republic of the",#A1C224
+184,Cook Islands,#2ED9EB
+188,Costa Rica,#3503DE
+191,Croatia,#AA5485
+192,Cuba,#E5515A
+196,Cyprus,#DA3E1B
+203,Czech Republic,#E57E66
+204,Benin,#EA3E4D
+208,Denmark,#42FBE7
+212,Dominica,#ECBCD2
+214,Dominican Republic,#EEFB5F
+218,Ecuador,#D53AA4
+222,El Salvador,#B5947E
+226,Equatorial Guinea,#9AA9C3
+231,Ethiopia,#A26BA6
+232,Eritrea,#F32409
+233,Estonia,#C04C2E
+234,Faroe Islands,#72EB1C
+238,Falkland Islands (Malvinas),#DEB8BA
+239,South Georgia and the South Sandwich Islands,#9D75CF
+242,Fiji,#AD595E
+246,Finland,#3002F9
+248,«?land Islands,#567987
+250,France,#106F44
+254,French Guiana,#40F6F9
+258,French Polynesia,#925BFE
+260,French Southern Territories,#E4556F
+262,Djibouti,#8CC455
+266,Gabon,#40CCE0
+268,Georgia,#59526E
+270,Gambia,#37D7FA
+275,"Palestinian Territory, Occupied",#6D0A0B
+276,Germany,#26A7DA
+288,Ghana,#8F5E64
+292,Gibraltar,#C4E2BC
+296,Kiribati,#8A67E5
+300,Greece,#F810FE
+304,Greenland,#96A393
+308,Grenada,#8A61CE
+312,Guadeloupe,#927F09
+316,Guam,#674265
+320,Guatemala,#5657B7
+324,Guinea,#DAEA01
+328,Guyana,#BA5853
+332,Haiti,#CD7721
+334,Heard Island and McDonald Islands,#854FBF
+336,Holy See (Vatican City State),#B3412A
+340,Honduras,#928FAE
+344,Hong Kong,#5ECADE
+348,Hungary,#4F6A3A
+352,Iceland,#502618
+356,India,#642780
+360,Indonesia,#C75E74
+364,"Iran, Islamic Republic of",#036CA9
+368,Iraq,#FFA17E
+372,Ireland,#36F16A
+376,Israel,#0829BD
+380,Italy,#A1C224
+384,C«Ôte d'Ivoire,#2ED9EB
+388,Jamaica,#AA5485
+392,Japan,#E5515A
+398,Kazakhstan,#DA3E1B
+400,Jordan,#E57E66
+404,Kenya,#EA3E4D
+408,"Korea, Democratic People's Republic of",#42FBE7
+410,"Korea, Republic of",#ECBCD2
+414,Kuwait,#EEFB5F
+417,Kyrgyzstan,#D53AA4
+418,Lao People's Democratic Republic,#B5947E
+422,Lebanon,#9AA9C3
+426,Lesotho,#A26BA6
+428,Latvia,#F32409
+430,Liberia,#C04C2E
+434,Libya,#72EB1C
+438,Liechtenstein,#DEB8BA
+440,Lithuania,#9D75CF
+442,Luxembourg,#AD595E
+446,Macao,#3002F9
+450,Madagascar,#567987
+454,Malawi,#106F44
+458,Malaysia,#40F6F9
+462,Maldives,#925BFE
+466,Mali,#E4556F
+470,Malta,#8CC455
+474,Martinique,#40CCE0
+478,Mauritania,#59526E
+480,Mauritius,#37D7FA
+484,Mexico,#6D0A0B
+492,Monaco,#26A7DA
+496,Mongolia,#8F5E64
+498,"Moldova, Republic of",#C4E2BC
+499,Montenegro,#8A67E5
+500,Montserrat,#F810FE
+504,Morocco,#96A393
+508,Mozambique,#8A61CE
+512,Oman,#927F09
+516,Namibia,#674265
+520,Nauru,#5657B7
+524,Nepal,#DAEA01
+528,Netherlands,#BA5853
+531,Cura«ıao,#CD7721
+533,Aruba,#854FBF
+534,Sint Maarten (Dutch part),#B3412A
+535,"Bonaire, Sint Eustatius and Saba",#928FAE
+540,New Caledonia,#5ECADE
+548,Vanuatu,#4F6A3A
+554,New Zealand,#502618
+558,Nicaragua,#642780
+562,Niger,#C75E74
+566,Nigeria,#036CA9
+570,Niue,#FFA17E
+574,Norfolk Island,#36F16A
+578,Norway,#0829BD
+580,Northern Mariana Islands,#A1C224
+581,United States Minor Outlying Islands,#2ED9EB
+583,"Micronesia, Federated States of",#AA5485
+584,Marshall Islands,#E5515A
+585,Palau,#DA3E1B
+586,Pakistan,#E57E66
+591,Panama,#EA3E4D
+598,Papua New Guinea,#42FBE7
+600,Paraguay,#ECBCD2
+604,Peru,#EEFB5F
+608,Philippines,#D53AA4
+612,Pitcairn,#B5947E
+616,Poland,#9AA9C3
+620,Portugal,#A26BA6
+624,Guinea-Bissau,#F32409
+626,Timor-Leste,#C04C2E
+630,Puerto Rico,#72EB1C
+634,Qatar,#DEB8BA
+638,R«∏union,#9D75CF
+642,Romania,#AD595E
+643,Russian Federation,#3002F9
+646,Rwanda,#567987
+652,Saint Barth«∏lemy,#106F44
+654,"Saint Helena, Ascension and Tristan da Cunha",#40F6F9
+659,Saint Kitts and Nevis,#925BFE
+660,Anguilla,#E4556F
+662,Saint Lucia,#8CC455
+663,Saint Martin (French part),#40CCE0
+666,Saint Pierre and Miquelon,#59526E
+670,Saint Vincent and the Grenadines,#37D7FA
+674,San Marino,#6D0A0B
+678,Sao Tome and Principe,#26A7DA
+682,Saudi Arabia,#8F5E64
+686,Senegal,#C4E2BC
+688,Serbia,#8A67E5
+690,Seychelles,#F810FE
+694,Sierra Leone,#96A393
+702,Singapore,#8A61CE
+703,Slovakia,#927F09
+704,Viet Nam,#674265
+705,Slovenia,#5657B7
+706,Somalia,#DAEA01
+710,South Africa,#BA5853
+716,Zimbabwe,#CD7721
+724,Spain,#854FBF
+728,South Sudan,#B3412A
+729,Sudan,#928FAE
+732,Western Sahara,#5ECADE
+740,Suriname,#4F6A3A
+744,Svalbard and Jan Mayen,#502618
+748,Swaziland,#642780
+752,Sweden,#C75E74
+756,Switzerland,#036CA9
+760,Syrian Arab Republic,#FFA17E
+762,Tajikistan,#36F16A
+764,Thailand,#0829BD
+768,Togo,#A1C224
+772,Tokelau,#AA5485
+776,Tonga,#E5515A
+780,Trinidad and Tobago,#DA3E1B
+784,United Arab Emirates,#E57E66
+788,Tunisia,#EA3E4D
+792,Turkey,#42FBE7
+795,Turkmenistan,#ECBCD2
+796,Turks and Caicos Islands,#EEFB5F
+798,Tuvalu,#D53AA4
+800,Uganda,#B5947E
+804,Ukraine,#9AA9C3
+807,"Macedonia, the former Yugoslav Republic of",#A26BA6
+818,Egypt,#F32409
+826,United Kingdom,#C04C2E
+831,Guernsey,#72EB1C
+832,Jersey,#DEB8BA
+833,Isle of Man,#9D75CF
+834,"Tanzania, United Republic of",#AD595E
+840,United States,#3002F9
+850,"Virgin Islands, U.S.",#567987
+854,Burkina Faso,#106F44
+858,Uruguay,#40F6F9
+860,Uzbekistan,#925BFE
+862,"Venezuela, Bolivarian Republic of",#E4556F
+876,Wallis and Futuna,#8CC455
+882,Samoa,#40CCE0
+887,Yemen,#59526E
+894,Zambia,#37D7FA

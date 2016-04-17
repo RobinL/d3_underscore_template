@@ -1,124 +1,59 @@
+//This first line just say: "when the html has finished loading, then run the script"
+$(function() {
 
-var margin = {top: 20, right: 20, bottom: 20, left: 20},
-    padding = {top: 60, right: 60, bottom: 60, left: 60},
-    outerWidth = 960,
-    outerHeight = 500,
-    innerWidth = outerWidth - margin.left - margin.right,
-    innerHeight = outerHeight - margin.top - margin.bottom,
-    width = innerWidth - padding.left - padding.right,
-    height = innerHeight - padding.top - padding.bottom;
+    //Add a vector graphics element to the html page
+    var svg = d3.select("body").append("svg")
+        .attr("width", 1000)
+        .attr("height", 600)
+      .append("g")
 
-var x = d3.scale.identity()
-    .domain([0, width]);
+    //Load the data that definies the geometry of the world map, and a csv file that maps colour -> country  (you can edit this)
+    var p1 = $.getJSON("data/world-110m.json")  //Javascrip loads resources asynchronously - this code is non blocking 
+    var p2 = $.ajax("data/countries.csv")  //So I'm using promises
 
-var y = d3.scale.identity()
-    .domain([0, height]);
+    $.when(p1, p2).done(function(worlddata, countrydata) {  // when the data resources have been fetched 
 
-var xAxis = d3.svg.axis()
-    .scale(x)
-    .orient("bottom");
+        var worlddata = worlddata[0]
+        var countrydata = d3.csv.parse(countrydata[0]) //Parse data from csv
 
-var yAxis = d3.svg.axis()
-    .scale(y)
-    .orient("right");
+        var country_colour_lookup = _.object(_.map(countrydata, function(d){ return [d.id, d.colour]} ));
 
-var svg = d3.select("body").append("svg")
-    .attr("width", outerWidth)
-    .attr("height", outerHeight)
-  .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        var countries = topojson.feature(worlddata, worlddata.objects.countries).features;
 
-var defs = svg.append("defs");
+         var projection = d3.geo.mercator()
+            .scale(150)
+            .translate([490, 300]);
 
-defs.append("marker")
-    .attr("id", "triangle-start")
-    .attr("viewBox", "0 0 10 10")
-    .attr("refX", 10)
-    .attr("refY", 5)
-    .attr("markerWidth", -6)
-    .attr("markerHeight", 6)
-    .attr("orient", "auto")
-  .append("path")
-    .attr("d", "M 0 0 L 10 5 L 0 10 z");
+        var path = d3.geo.path()
+            .projection(projection);
 
-defs.append("marker")
-    .attr("id", "triangle-end")
-    .attr("viewBox", "0 0 10 10")
-    .attr("refX", 10)
-    .attr("refY", 5)
-    .attr("markerWidth", 6)
-    .attr("markerHeight", 6)
-    .attr("orient", "auto")
-  .append("path")
-    .attr("d", "M 0 0 L 10 5 L 0 10 z");
+        svg.append("path")
 
-svg.append("rect")
-    .attr("class", "outer")
-    .attr("width", innerWidth)
-    .attr("height", innerHeight);
+        var shapes = svg.selectAll(".countrypath")
+            .data(countries)
 
-var g = svg.append("g")
-    .attr("transform", "translate(" + padding.left + "," + padding.top + ")");
+          shapes.enter().append("path")
+            .attr("class", function(d) {
+                return "subunit " + d.id;
+            })
+            .attr("class", function(d) {
+                return "countrypath";
+            })
+            .attr("d", path)
+            .attr("id", function(d, i) {
+                return d.id;
+            })
+            .attr("name", function(d, i) {
+                return d.properties.name;
+            })
+            .attr("fill", function(d) {
+                return country_colour_lookup[d.id]
+            })
 
-g.append("rect")
-    .attr("class", "inner")
-    .attr("width", width)
-    .attr("height", height);
+        var shapes = svg.selectAll(".countrypath")
+            .data(countries)
 
-g.append("g")
-    .attr("class", "x axis")
-    .attr("transform", "translate(0," + height + ")")
-    .call(xAxis);
 
-g.append("g")
-    .attr("class", "y axis")
-    .attr("transform", "translate(" + width + ",0)")
-    .call(yAxis);
+    })
 
-svg.append("line")
-    .attr("class", "arrow")
-    .attr("x2", padding.left)
-    .attr("y2", padding.top)
-    .attr("marker-end", "url(#triangle-end)");
-
-svg.append("line")
-    .attr("class", "arrow")
-    .attr("x1", innerWidth / 2)
-    .attr("x2", innerWidth / 2)
-    .attr("y2", padding.top)
-    .attr("marker-end", "url(#triangle-end)");
-
-svg.append("line")
-    .attr("class", "arrow")
-    .attr("x1", innerWidth / 2)
-    .attr("x2", innerWidth / 2)
-    .attr("y1", innerHeight - padding.bottom)
-    .attr("y2", innerHeight)
-    .attr("marker-start", "url(#triangle-start)");
-
-svg.append("line")
-    .attr("class", "arrow")
-    .attr("x2", padding.left)
-    .attr("y1", innerHeight / 2)
-    .attr("y2", innerHeight / 2)
-    .attr("marker-end", "url(#triangle-end)");
-
-svg.append("line")
-    .attr("class", "arrow")
-    .attr("x1", innerWidth)
-    .attr("x2", innerWidth - padding.right)
-    .attr("y1", innerHeight / 2)
-    .attr("y2", innerHeight / 2)
-    .attr("marker-end", "url(#triangle-end)");
-
-svg.append("text")
-    .text("origin")
-    .attr("y", -8);
-
-svg.append("circle")
-    .attr("class", "origin")
-    .attr("r", 4.5);
-
-g.append("text")
-    .text("translate(margin.left, margin.top)")
-    .attr("y", -8);
+})
