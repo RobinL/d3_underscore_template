@@ -8,19 +8,18 @@ var margin = {top: 20, right: 20, bottom: 20, left: 20},
     width = innerWidth - padding.left - padding.right,
     height = innerHeight - padding.top - padding.bottom;
 
-var x = d3.scale.identity()
+var x = d3.scaleIdentity()
     .domain([0, width]);
 
-var y = d3.scale.identity()
+var y = d3.scaleIdentity()
     .domain([0, height]);
 
-var xAxis = d3.svg.axis()
-    .scale(x)
-    .orient("bottom");
+var xAxis = d3.axisBottom()
+    .scale(x);
 
-var yAxis = d3.svg.axis()
+
+var yAxis = d3.axisRight()
     .scale(y)
-    .orient("right");
 
 var svg = d3.select("body").append("svg")
     .attr("width", outerWidth)
